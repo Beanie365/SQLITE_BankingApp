@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JavaProject</string>
+    <string name="welcome">Welcome to the Money-Money banking App!</string>
+    <string name="balance">View Account Balance</string>
+<string-array name="spinnerItems">
+
+    <item>Balance to Savings</item>
+    <item>Savings to Balance</item>
+</string-array>
+
+</resources>

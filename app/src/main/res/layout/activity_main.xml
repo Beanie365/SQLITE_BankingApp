@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_2"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/ic_logo"
+            android:id="@+id/logo"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="170dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="Logo"
+
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Email"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/loginPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/loginEmail"
+        />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginPass"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="140dp"
+        android:text="Login"
+
+        android:textColor="@color/colorPrimary"
+        tools:text="Login" />
+
+    <TextView
+        android:id="@+id/moveRegister"
+        android:layout_width="140dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="31dp"
+        android:text="Don't have an account? Register Instead"
+        android:textColor="@color/colorPrimary"
+        tools:text="Don't have an account? Register Instead" />
+</LinearLayout>

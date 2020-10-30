@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".TransferPage">
+
+    <TextView
+        android:id="@+id/transfer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Transfer Between Accounts"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/transferBalance"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/transfer"/>
+    <TextView
+        android:id="@+id/transferSavings"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/transferBalance"/>
+
+    <TextView
+        android:id="@+id/transferTxt"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/transferSavings"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="22dp"
+        android:textSize="15dp"
+        android:text="Amount to transfer" />
+
+    <EditText
+        android:id="@+id/transferAmount"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/transferSavings"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/transferType"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/transferAmount"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/transfertoAccBtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:text="Transfer"
+        android:layout_below="@id/transferType"
+        android:textColor="@color/colorPrimary"/>
+    <ImageView
+        android:id="@+id/backbtnTransfer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_back"
+        android:layout_below="@id/transfertoAccBtn"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginLeft="170dp"
+        />
+
+</RelativeLayout>
